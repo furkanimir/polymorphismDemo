@@ -2,7 +2,7 @@ public class CustomerManager {
     private BaseLogger logger;//isteğe göre, farklı yerlerde kullanılabilmesi için referans gösterdim.
 
     public CustomerManager(BaseLogger logger){
-    this.logger=logger;     //main kısmında isteğe göre ve constructor sayesinde
+    this.logger=logger;     // 'constructor' sayesinde, main kısmında isteğe göre
                             // email,console,database vb. yerleri kullanabiliriz.
     }
 

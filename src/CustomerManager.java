@@ -7,8 +7,8 @@ public class CustomerManager {
     }
 
 
-    public void Add(){
-        this.logger.Log("customer added");
+    public void add(){
+        this.logger.log("customer added");
     }
 
 }

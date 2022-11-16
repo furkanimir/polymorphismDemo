@@ -3,12 +3,12 @@ public class Main {
         BaseLogger[] loggers = new BaseLogger[]{new FileLogger(), new DatabaseLogger(), new ConsoleLogger(), new EmailLogger() };
 
         for (BaseLogger logger: loggers){
-            logger.Log("21");
+            logger.log("21");
         }
         System.out.println("/////////////////");
 
-        CustomerManager customerManager=new CustomerManager(new FileLogger());
-        customerManager.Add();
+        CustomerManager customerManager=new CustomerManager(new DatabaseLogger());
+        customerManager.add();
 
     }
 }//main
